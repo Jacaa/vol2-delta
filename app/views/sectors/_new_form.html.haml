@@ -1,7 +1,6 @@
-=form_for @sector do |f|
+=form_for @sector, url: crag_sectors_path do |f|
 
-  =f.label :crag_id, class: 'form-group'
-  =f.text_field :crag_id, class: 'form-control'
+  =f.hidden_field :crag_id, value: params[:crag_id]
 
   =f.label :name, class: 'form-group'
   =f.text_field :name, class: 'form-control'

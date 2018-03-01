@@ -21,3 +21,4 @@
               %td= i
               %td= link_to sector.name, crag_sector_path(sector.crag, sector)
       = link_to 'Back', crags_path, class: 'btn btn-primary'
+      = link_to 'Add new sector', new_crag_sector_path(@crag), class: 'btn btn-dark'

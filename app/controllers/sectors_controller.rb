@@ -15,7 +15,7 @@ class SectorsController < ApplicationController
   def create
     @sector = Sector.new(sector_params)
     if @sector.save
-      redirect_to sectors_path
+      redirect_to crag_sectors_path @sector.crag
     else
       render 'new'
     end
